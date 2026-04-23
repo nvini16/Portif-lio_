@@ -1,0 +1,107 @@
+:root {
+    --border-sections: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f;
+    color: rgb(232, 252, 255);
+  }
+@media (max-width: 600px) { 
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    align-items: center;
+    padding: 20px;
+}
+}
+
+.Logo {
+    border-radius: 50px;
+    max-width: 100%;
+    height: 95px;
+    border: 2px solid #00e5ff;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+@media (max-width: 600px){
+    h1 {
+        font-size: 22px;
+
+    }
+
+    h2 {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+}
+  
+@media (max-width : 600px) { 
+  section {
+    padding: 40px;
+    margin: 40px;
+    max-width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid var(--border-sections);
+    transition: 0.2s;
+    overflow: hidden;
+    
+  }
+}
+
+  section:hover {
+    box-shadow: 0 0 20px #26F5F5;
+    transform: scale(1.02) ;
+  }
+
+  a {
+    text-decoration: none;
+    color: aqua;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: rgba(0, 225, 255, 0.443);
+    cursor: pointer;
+    transform: scale(1.1);
+
+  }
+
+  footer {
+    text-align: center;
+  }
+  /* classes */
+  @media (max-width: 600px){ 
+  .card {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #00e5ff;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+}
+
+  button {
+    cursor: pointer;
+  }
+  
+  .card:hover {
+   /* box-shadow: 0 0 20px #26F5F5;*/
+    transform: scale(1.1) 
+  }
+
+ 
