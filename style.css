@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +18,7 @@ body {
     font-family: Arial;
     background: #0f0f0f;
     color: rgb(232, 252, 255);
+    cursor: url("pointer.png"), auto;
   }
 @media (max-width: 600px) { 
 header {
@@ -105,10 +111,48 @@ ul {
     padding: 0;
   }
 
+  button {
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    background-color: #0f0f0f;
+    color: white;
+    margin-top: 30px;
+    
+  }
+
+  button:hover {
+    background-color: aqua;
+    color: #0f0f0f;
+  }
   footer {
     text-align: center;
     padding: 9px;
   }
+
+  audio {
+    width: 100%;
+    margin-top: 10px;
+    filter: invert(1);
+
+
+    
+  }
+
+  /* scroll */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #26F5F5;
+    border-radius: 10px;
+  }
+
   /* classes */
   @media (max-width: 600px){ 
   .card {
@@ -129,6 +173,19 @@ ul {
     transform: scale(1.1) 
   }
 
+
+  .vibe {
+    section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.6s;
+    }
+  }
+
+  .vibe.ativo {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
 
  
