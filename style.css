@@ -30,6 +30,20 @@ header {
     max-width: 100%;
     height: 95px;
     border: 2px solid #00e5ff;
+    animation: neonPulse 3s infinite;
+    box-shadow: 0 0 5px #26F5F5;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 5px #26F5F5;
+  }
+  50% {
+    box-shadow: 0 0 20px #26F5F5, 0 0 40px #26F5F5;
+  }
+  100% {
+    box-shadow: 0 0 5px #26F5F5;
+  }
 }
 
 main {
@@ -47,6 +61,10 @@ main {
         font-size: 18px;
         padding-bottom: 30px;
     }
+}
+
+ul {
+  list-style: none;
 }
   
 @media (max-width : 600px) { 
@@ -81,8 +99,15 @@ main {
 
   }
 
+  ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+  }
+
   footer {
     text-align: center;
+    padding: 9px;
   }
   /* classes */
   @media (max-width: 600px){ 
@@ -103,5 +128,9 @@ main {
    /* box-shadow: 0 0 20px #26F5F5;*/
     transform: scale(1.1) 
   }
+
+  
+
+ 
 
  
