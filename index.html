@@ -38,17 +38,23 @@
 
   <main>
     <section class="home">
-        <h2>Bio</h2>
+        <h2>Reflexão</h2>
 
-        <p>Criando</p>
+        <p>"A vida é um pacote completo. Se você sente dor também pode sentir alegria".</p>
       </section>
     
-      <section class="sobre">
-        <h2>Mente</h2>
-        <p>Meu jeito de pensar</p>
+      <div>
+        <section class="vibe">
+            <h2>vibe</h2>
+            <p>Meu jeito de pensar</p>
 
-        <button onclick="clicar()">Vozes</button>
-      </section>
+            <audio controls>
+                <source src="" type="audio/mpeg">
+            </audio>
+    
+            <button onclick="clicar()">Vozes</button>
+          </section>
+      </div>
     
       <section id="projetos" class="projetos">
         <h2>Projetos</h2>
@@ -72,6 +78,21 @@
     function clicar() {
     alert("Pelo menos alguma coisa está funcionando.");
   }
+
+  // scroll 
+
+  const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const topo = sec.getBoundingClientRect().top;
+    const tela = window.innerHeight;
+
+    if (topo < tela - 100) {
+      sec.classList.add("ativo");
+    }
+  });
+});
   </script>
 
 </body>
