@@ -23,12 +23,15 @@ body {
 @media (max-width: 600px) { 
 header {
     display: flex;
-    flex-direction: column;
     gap: 10px;
     
     align-items: center;
     padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  
 }
+
 }
 
 .Logo {
